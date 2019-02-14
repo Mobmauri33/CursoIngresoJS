@@ -42,5 +42,18 @@ function Circulo ()
 }
 function Materiales () 
 {
-	
+    var superficie;
+    var ancho;
+    var largo;
+    var cemento;
+    var cal;
+    largo = document.getElementById("Largo").value;
+    ancho = document.getElementById("Ancho").value;
+    largo = parseInt(largo);
+    ancho = parseInt(ancho);
+    superficie = ancho*largo;
+    parseInt (superficie);
+    cemento = superficie/2;
+    cal = superficie /3;
+    alert ("se necesitan " + cemento + "bolsas de cemento y " + cal + "bolsas de cal para cubrir la superficie de " + superficie + "metros cuadrados");
 }
