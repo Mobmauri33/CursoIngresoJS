@@ -1,11 +1,11 @@
 function mostrar()
 {
     var precio;
-    var porcentaje;
+    var propina;
     var cuenta;
     var precioFinal;
     precio = prompt("Ingrese su precio");
-    porcentaje = precio*0.10;
-    cuenta = parseInt(precio)+parseInt(porcentaje);
-    alert ("La cuenta es " + precio + " + el 10% " + porcentaje + " Entonces el total a pagar de la cuenta es " + cuenta);
+    propina = precio*0.10;
+    cuenta = parseInt(precio)+parseInt(propina);
+    alert ("La cuenta es " + precio + " + el 10% de propina " + propina + " Entonces el total a pagar de la cuenta es " + cuenta);
 }
