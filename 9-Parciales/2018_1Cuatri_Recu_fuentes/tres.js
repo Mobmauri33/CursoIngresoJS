@@ -1,12 +1,11 @@
 function mostrar()
 {
     var precio;
-    var porcentajededesc;
+    var porcentaje;
     var cuenta;
     var precioFinal;
     precio = prompt("Ingrese su precio");
-    porcentajededesc = prompt("Ingrese el porcentaje de descuento a calcular");
-    cuenta = parseInt(precio)*parseInt(porcentajededesc) / 100;
-    precioFinal = (precio)-(cuenta);
-    document.getElementById("elPrecioFinal").value = precioFinal;
+    porcentaje = precio*0.10;
+    cuenta = parseInt(precio)+parseInt(porcentaje);
+    alert ("La cuenta es " + precio + " + el 10% " + porcentaje + " Entonces el total a pagar de la cuenta es " + cuenta);
 }
