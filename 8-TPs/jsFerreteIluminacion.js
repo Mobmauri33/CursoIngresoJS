@@ -16,6 +16,8 @@ function CalcularPrecio ()
      var descuento;
      var descuento2;
      var descuento3;
+     var descuento4;
+     var descuento5;
      var preciocondesc;
      cantidad = document.getElementById("Cantidad").value;
      cantidad = parseInt(cantidad);
@@ -29,25 +31,19 @@ function CalcularPrecio ()
      descuento4 = (precio*0.25);
      descuento5 = (precio*0.20);
      if(cantidad>=6) {
-          document.getElementById("precioDescuento").value = descuento;
-        }
-        else
-        {
-            if (cantidad=5 && marca=="ArgentinaLuz")
-            {
-                document.getElementById("precioDescuento").value = descuento2;
-            }
-            else
-            {
-                document.getElementById("precioDescuento").value = descuento3;
-            }
-
-        }
-    if(cantidad=4 && marca=="ArgentinaLuz" || marca=="FelipeLamparas") {
-        document.getElementById("precioDescuento").value = descuento4;
-        }
-        else
-        {
-        document.getElementById("precioDescuento").value = descuento5;
+        document.getElementById("precioDescuento").value = descuento;
+      }
+      else
+      {
+          if (cantidad=5 && marca=="ArgentinaLuz")
+          {
+              document.getElementById("precioDescuento").value = descuento2;
+          }
+          else
+          {
+              document.getElementById("precioDescuento").value = descuento3;
+          }
+        
+        
         }
 }
