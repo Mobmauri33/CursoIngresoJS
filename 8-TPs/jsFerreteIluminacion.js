@@ -16,24 +16,38 @@ function CalcularPrecio ()
      var descuento;
      var descuento2;
      var descuento3;
+     var preciocondesc;
      cantidad = document.getElementById("Cantidad").value;
      cantidad = parseInt(cantidad);
      precio = (cantidad*35);
      marca = document.getElementById("Marca").value;
+     preciocondesc = document.getElementById("precioDescuento").value;
+     preciocondesc = (precio-descuento);
      descuento = (precio*0.50);
      descuento2 = (precio*0.40);
      descuento3 = (precio*0.30);
+     descuento4 = (precio*0.25);
+     descuento5 = (precio*0.20);
      if(cantidad>=6) {
-         alert("El total a pagar es " + (precio-descuento));
-     }
-     else {
-        alert ("El total a pagar es " + precio);
-     }
+          document.getElementById("precioDescuento").value = descuento;
+        }
+        else
+        {
+            if (cantidad=5 && marca=="ArgentinaLuz")
+            {
+                document.getElementById("precioDescuento").value = descuento2;
+            }
+            else
+            {
+                document.getElementById("precioDescuento").value = descuento3;
+            }
 
-     if (cantidad=5 && marca="ArgentinaLuz") {
-         alert("El total a pagar es " + (precio-descuento2) );
-     }
-     else {
-         alert()
-     }
+        }
+    if(cantidad=4 && marca=="ArgentinaLuz" || marca=="FelipeLamparas") {
+        document.getElementById("precioDescuento").value = descuento4;
+        }
+        else
+        {
+        document.getElementById("precioDescuento").value = descuento5;
+        }
 }

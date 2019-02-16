@@ -7,8 +7,9 @@ function mostrarAumento()
 	var numero1;
     var numero2;
     var rEsultado;
-    numero1 = document.getElementById("importe").Value;
-    numero2 = document.getElementById("resultado").Value;
+    numero1 = document.getElementById("importe").value;
+    numero2 = document.getElementById("resultado").value;
     rEsultado = parseInt(numero1)-parseInt(numero1)*0.25;
-    alert (rEsultado);
+    document.getElementById("resultado").value = rEsultado;
+
 }

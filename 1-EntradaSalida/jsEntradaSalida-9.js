@@ -10,6 +10,6 @@ function mostrarAumento()
     numero1 = document.getElementById("sueldo").value;
     numero2 = document.getElementById("resultado").value;
     rEsultado = parseInt(numero1)+parseInt(numero1)*0.10;
-    alert (rEsultado);
+    document.getElementById("resultado").value = rEsultado;
 	
 }
