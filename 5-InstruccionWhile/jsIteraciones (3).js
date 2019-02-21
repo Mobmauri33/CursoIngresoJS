@@ -6,6 +6,11 @@ function mostrar()
     clave = prompt("ingrese el número de clave.");
  break;
  }
- while(cont=3) {
-    cont+
- 
+ while(cont<2) {
+    cont++
+    console.log(cont++);
+    clave= prompt("ingrese el número de clave.");
+    alert("ingresó mal su clave tres veces, vuelva a intentarlo");
+ }
+ }
+//FIN DE LA FUNCIÓN
