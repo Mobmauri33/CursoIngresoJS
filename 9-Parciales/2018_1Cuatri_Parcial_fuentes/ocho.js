@@ -19,14 +19,13 @@ var letramin;
 while(respuesta) {
      //ingreso letra
      letra = prompt("Ingrese una letra");
-     letra = parseInt(letra);
 
      //valido que sea una letra
-     while (letra=!isNaN(letra))
+     while (!isNaN(letra))
      {
         letra = prompt("no ingreso una letra, por favor ingrese una letra");
         letra = parseInt(letra);
-     }
+     };
      //ingreso numero
      numero = prompt("ingrese un numero entre -100 y 100");
      numero = parseInt(numero);

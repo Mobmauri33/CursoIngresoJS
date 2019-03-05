@@ -16,9 +16,8 @@ var pesomin;
 while(respuesta) {
      //ingreso marca
      marca = prompt("ingrese la marca del producto");
-     marca = parseInt(marca);
      //valido que sea una marca
-     while (marca=!isNaN(marca))
+     while (!isNaN(marca))
      {
          marca = prompt("esa no es una marca, ingresa una marca");
          marca = parseInt(marca);

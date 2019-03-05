@@ -1,45 +1,43 @@
 function mostrar()
 {
-    var nota
-    var sexo
-    var contadorM= 0
-    var contador = 0
-    var notaBaja = 10
-    var sumaDeNotas = 0
-    var sexoNotaBaja = 0
-
-while (contador<5) {
-
-    contador ++ ; 
-///////////
-    nota = prompt ("Ingrese la nota del alumno ") ;
-    nota=parseInt(nota)  
-                    while(isNaN(nota)||nota>10||nota<1) {
-                                        nota=prompt("error , ingrese la nota del alumno")
-                                        nota=parseInt(nota)
-                                       };
-////////////
-    sexo= prompt(" ingrese sexo del alumno (m) o (f)")
-
-                    while(sexo!="m"&&sexo!="f"){
-                        sexo= prompt(" error , ingrese sexo del alumno (m) o (f)")
-                                               }
-////////////
-if (nota<=notaBaja&&sexo=="m") { notaBaja=nota ; sexoNotaBaja="Masculino" } else {
-
-    if(nota<=notaBaja&&sexo=="f") {notaBaja=nota ; sexoNotaBaja="Femenino"}
-
-};
-////////////
-sumaDeNotas=sumaDeNotas+nota;
-////////////
-if (nota>6&&sexo=="m"){contadorM++};
-
-};
+    var notas;
+    var sexo;
+    var promedioNotasTotales;
+    var NotamasBaja=10;
+    var sexoDelanotaMasBaja=0
+    var sumadenotas=0;
+    var CantVarones=0;
+    var cont=0;
 
 
-alert ( "El promedio de las notas totales es de "+sumaDeNotas/5+". La nota mas baja fue "+notaBaja+
-" El sexo de la persona con la nota mas baja era "+sexoNotaBaja+" y la cantidad de varones con notas mayores a 6 fue de "+contadorM);
+while(cont<5) {
+    cont++
 
-
+     notas = prompt("Ingrese una nota del 0 al 10");
+     notas = parseInt(notas);
+     //valido la nota
+     while(isNaN(notas))
+     {
+        notas = prompt("error, ingrese una nota del 0 al 10");
+        notas = parseInt(notas);
+     }
+     //valido que sea una nota entre 0 y 10
+     while(notas>10 || notas<0)
+     {
+        notas = prompt("error, la nota debe ser del 0 al 10");
+        notas = parseInt(notas);
+     }
+     //ingreso sexo
+     sexo = prompt("ingrese sexo (f) o (m)");
+     //valido que sea f o m
+     while(sexo!="m" && sexo!="f")
+     {
+        sexo = prompt("error, ingrese el sexo correctamente (f) o (m)")
+     }
+     while(!isNaN(sexo))
+     {
+        sexo = prompt("error, no ha ingresado un sexo")
+     }
+     }
 }
+
